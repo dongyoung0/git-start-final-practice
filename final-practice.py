@@ -11,7 +11,13 @@
 
 ##4 fibonacci sequence(with memoization)
 
-
+def fibonacci_m(n):
+    seq = [1,1]
+    if n == 1 or n == 2:
+        return 1
+    for i in range(2,n):
+        seq.append(seq[i-1]+seq[i-2])
+    return seq
 
 ##5 fibonacci sequence(with binet's formula)
 
