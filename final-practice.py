@@ -7,9 +7,9 @@ def leaf():
     if year > 3000 or year <1:
         print("1~3000사이의 정수를 입력해주세요.")
     elif year%400 == 0 or (year%4 == 0 and year%100 != 0):
-        print("윤년입니다")
+        print("윤년입니다.")
     else: 
-        print("평년입니다")
+        print("평년입니다.")
 
 ##2 Ethiopian multiplication
 
@@ -41,7 +41,6 @@ def fibonacci_recursion():
         seq.append(fibonacci_r(i))
     return seq
 
-
 ##4 fibonacci sequence(with memoization)
 
 def fibonacci_m():
@@ -53,7 +52,14 @@ def fibonacci_m():
         seq.append(seq[i-1]+seq[i-2])
     return seq
 
+##5 fibonacci sequence(with binet's formula)
 
-##5 Fibonacci sequence(with binet's formula)
-
+def fibonacci_binet():
+    n = int(input("출력할 피보나치 수열의 항의 개수를 입력해주세요: "))
+    seq = []
+    phi = (1+5**0.5)/2
+    for i in range(1,n+1):
+        num = int(((phi)**i - (1-phi)**i)/(5**0.5))
+        seq.append(num)
+    return seq
 
