@@ -15,12 +15,7 @@ def leaf():
 
 ##3 fibonacci sequence(recursion)
 
-
 ##4 fibonacci sequence(with memoization)
 
-
-
 ##5 fibonacci sequence(with binet's formula)
-
-
 
