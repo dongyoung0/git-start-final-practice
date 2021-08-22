@@ -11,7 +11,8 @@
 
 ##4 fibonacci sequence(with memoization)
 
-def fibonacci_m(n):
+def fibonacci_m():
+    n = int(input("출력할 피보나치 수열의 항의 개수를 입력해주세요: ")
     seq = [1,1]
     if n == 1 or n == 2:
         return 1
